@@ -4,24 +4,29 @@
 	xmlns="http://www.w3.org/2001/06/grammar"
 	root="rootRule">
   <rule id="rootRule">
-
     <item>
       <ruleref uri="#rule1"/>
     </item>
-
   </rule>
   <rule id="rule1">
-    <item>switch</item>
+    <item>Turn</item>
     <ruleref uri="#rule2"/>
   </rule>
   <rule id="rule2">
     <one-of>
-    <item>light of room</item>
-    <item>all lights</item>
+    <item>on</item>
+    <item>off</item>
       </one-of>
     <ruleref uri="#rule3"/>
-  </rule>
+    </rule>
   <rule id="rule3">
+    <one-of>
+    <item>light of room</item>
+    <item>all the lights</item>
+      </one-of>
+    <ruleref uri="#rule4"/>
+  </rule>
+  <rule id="rule4">
     <one-of>
       <item>one</item>
       <item>two</item>

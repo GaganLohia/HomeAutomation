@@ -27,7 +27,8 @@
                     </StackPanel>
                     <StackPanel HorizontalAlignment="Left" Height="225" VerticalAlignment="Top" Width="124" Canvas.Left="272" Canvas.Top="85">
                         <TextBlock x:Name="securityheading" TextWrapping="Wrap" Text="Security" Foreground="Crimson" TextAlignment="Center" FontWeight="Bold" FontSize="18" />
-                        <Button x:Name="ultrasonicSwitch" Margin="0,20,0,2" Content="Ultrasonic" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Gray"/>
+                        <Button x:Name="ultrasonicSwitch" Margin="0,20,0,2" Content="Ultrasonic" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Gray" Click="ultrasonicSwitch_Click"/>
+                        <Button x:Name="cameraSwitch" Margin="0,0,0,2" Content="Click Pic" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Gray" Click="cameraSwitch_Click"/>
                         <Button x:Name="speechRecognizerSwitch"  FontFamily="Segoe MDL2 Assets" Content="&#xE1D6;" FontSize="30"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Gray" Height="56" Click="speechRecognizerSwitch_Click"/>
                         <TextBlock x:Name="distance" TextWrapping="Wrap" Text=""  TextAlignment="Center"/>
                         <Button x:Name="button" Content="Update"   Width="124"/>
